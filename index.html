@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>CleanByte Co. - Mini Portable Vacuum Cleaner</title>
+<style>
+  /* Reset & base */
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f9fafb;
+    color: #222;
+    line-height: 1.6;
+  }
+  a {
+    text-decoration: none;
+    color: #0078d7;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  /* Container */
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  /* Header / Hero */
+  header {
+    text-align: center;
+    padding: 60px 20px 40px;
+  }
+  header h1 {
+    font-size: 3rem;
+    color: #0078d7;
+    margin-bottom: 10px;
+  }
+  header p {
+    font-size: 1.2rem;
+    color: #555;
+  }
+  /* Product image */
+  .product-image {
+    max-width: 300px;
+    margin: 0 auto 40px;
+    display: block;
+  }
+  /* Product description */
+  section.description {
+    background: white;
+    padding: 30px 25px;
+    border-radius: 8px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    margin-bottom: 40px;
+  }
+  section.description h2 {
+    margin-bottom: 15px;
+    color: #0078d7;
+  }
+  section.description p {
+    font-size: 1.1rem;
+    color: #333;
+  }
+  /* Features */
+  section.features {
+    margin-bottom: 40px;
+  }
+  section.features h2 {
+    color: #0078d7;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  ul.features-list {
+    list-style: none;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0;
+  }
+  ul.features-list li {
+    background: white;
+    margin-bottom: 15px;
+    padding: 15px 20px;
+    border-radius: 6px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.07);
+    font-weight: 600;
+    color: #222;
+  }
+  /* CTA Button */
+  .cta {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  .btn-buy {
+    background-color: #0078d7;
+    color: white;
+    padding: 15px 35px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 35px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .btn-buy:hover {
+    background-color: #005ea3;
+  }
+  /* Contact form */
+  section.contact {
+    background: white;
+    padding: 30px 25px;
+    border-radius: 8px;
+    max-width: 600px;
+    margin: 0 auto 40px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  }
+  section.contact h2 {
+    color: #0078d7;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  form label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 600;
+    color: #444;
+  }
+  form input, form textarea {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 20px;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    font-size: 1rem;
+    resize: vertical;
+  }
+  form input:focus, form textarea:focus {
+    border-color: #0078d7;
+    outline: none;
+  }
+  form button {
+    background-color: #0078d7;
+    color: white;
+    border: none;
+    padding: 15px 35px;
+    font-size: 1.1rem;
+    border-radius: 35px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  form button:hover {
+    background-color: #005ea3;
+  }
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+    color: #999;
+  }
+  footer a {
+    color: #0078d7;
+    margin: 0 8px;
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+
+  <header>
+    <h1>CleanByte Co.</h1>
+    <p>Mini Portable Vacuum Cleaner — Clean your space anytime, anywhere.</p>
+    <img src="https://cdn.shopify.com/s/files/1/0275/9279/1158/products/mini-portable-vacuum-cleaner-01_400x400.jpg" alt="CleanByte Mini Portable Vacuum Cleaner" class="product-image" />
+  </header>
+
+  <section class="description">
+    <h2>About the Product</h2>
+    <p>The CleanByte Mini Portable Vacuum Cleaner is your perfect companion for quick and easy cleaning. Lightweight, rechargeable, and powerful, it tackles dust and crumbs on desks, keyboards, cars, and more. Compact design means you can carry it anywhere and keep your environment spotless with minimal effort.</p>
+  </section>
+
+  <section class="features">
+    <h2>Key Features</h2>
+    <ul class="features-list">
+      <li>Compact and Lightweight Design</li>
+      <li>Rechargeable USB Battery</li>
+      <li>Strong Suction Power</li>
+      <li>Easy to Clean Filter</li>
+      <li>Multi-surface Use (Desk, Car, Keyboard)</li>
+    </ul>
+  </section>
+
+  <div class="cta">
+    <button class="btn-buy" onclick="alert('Thanks for your interest! Purchase coming soon.')">Buy Now</button>
+  </div>
+
+  <section class="contact">
+    <h2>Contact Us</h2>
+    <form onsubmit="event.preventDefault(); alert('Message sent! We will get back to you shortly.')">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" placeholder="Your full name" required />
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="you@example.com" required />
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="4" placeholder="Your message here..." required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+</div>
+
+<footer>
+  <p>© 2025 CleanByte Co. | <a href="https://www.facebook.com/CleanByteCo" target="_blank" rel="noopener noreferrer">Facebook</a> | <a href="https://www.instagram.com/CleanByteCo" target="_blank" rel="noopener noreferrer">Instagram</a></p>
+</footer>
+
+</body>
+</html>
